@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas Fotos - Vitória Caroline & Samuel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nossas Fotos</h1>
+        <div class="gallery" id="photoGallery">
+            <!-- As fotos serão carregadas dinamicamente -->
+        </div>
+        <div class="loading" id="loadingMessage">
+            Carregando fotos...
+        </div>
+        <a class="back-link" href="index.html">← Voltar para a mensagem</a>
+    </div>
+
+    <script>
+        // Lista das fotos
+        const photos = [
+            'foto1.jpeg',
+            'foto2.jpeg'
+        ];
+
+        // Função para criar um card de foto
+        function createPhotoCard(photoName) {
+            return `
+                <div class="photo-card">
+                    <img src="https://raw.githubusercontent.com/JotaVee02/samuel-vitoria/main/fotos/${photoName}" alt="Nossa foto" />
+                </div>
+            `;
+        }
+
+        // Carregar as fotos
+        function loadPhotos() {
+            const gallery = document.getElementById('photoGallery');
+            const loading = document.getElementById('loadingMessage');
+            
+            // Primeiro, esconde a mensagem de carregamento
+            loading.style.display = 'none';
+            
+            // Adiciona cada foto ao grid
+            photos.forEach(photo => {
+                gallery.innerHTML += createPhotoCard(photo);
+            });
+        }
+
+        // Carregar as fotos quando a página carregar
+        window.addEventListener('load', loadPhotos);
+    </script>
+</body>
+</html>
