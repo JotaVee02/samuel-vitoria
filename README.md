@@ -22,8 +22,8 @@ samuel-vitoria/
    - O site ficará disponível em: https://JotaVee02.github.io/samuel-vitoria/
 
 2. **Fotos**
-   - O site está configurado para mostrar 2 fotos
-   - As fotos devem estar na pasta `fotos` com nomes `foto1.jpeg` e `foto2.jpeg`
+   - O site está configurado para mostrar 9 fotos
+   - As fotos devem estar na pasta `fotos` com nomes `foto1.jpeg` até `foto9.jpeg`
    - As fotos devem ser em formato JPEG
 
 ## Características

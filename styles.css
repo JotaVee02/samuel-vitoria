@@ -107,11 +107,12 @@ body {
 /* Estilos para a página de fotos */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
     max-width: 1800px;
     margin: 2rem auto;
+    width: 100%;
 }
 
 .photo-card {
